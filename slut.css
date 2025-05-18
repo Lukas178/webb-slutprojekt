@@ -1,94 +1,85 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0px;
-    padding: 0px;
-    background-color: aqua;
-    color: #333;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
 }
+
 
 header {
-    background-color: blue;
-    color: azure;
-    padding: 10px;
-    text-align: center;
+  background-color: #004d66;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
-
 nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #003344;
 }
 
 nav li {
-    margin: 0 15px;
+  margin: 0;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 15px;
-    display: block;
-  }
-  
-  nav a:hover {
-    background-color: #1abc9c;
-    color: white;
-  }
-  
-  section {
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
-    background-color: white;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-  
-  form label,
-  form input,
-  form textarea,
-  form button {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  
-  form input,
-  form textarea {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  form button {
-    background-color: #2c3e50;
-    color: white;
-    padding: 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  form button:hover {
-    background-color: #1abc9c;
-  }
-
-
-
-footer {
-    font-family: Arial, sans-serif;
-    margin-bottom: 0px;
-    padding: 20px;
-    background-color: blue;
-    color: white;
-    text-align: center;
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
+
+nav a:hover {
+  background-color: #1abc9c;
+  color: white;
+}
+
+
+section, main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+form label,
+form input,
+form textarea,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #1abc9c;
+}
+
 
 .slideshow-container {
   width: 100%;
@@ -106,4 +97,77 @@ footer {
   height: 100%;
   object-fit: cover;
   display: none;
+}
+
+
+.produkt {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.produkt p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.produkt button {
+  background-color: #007799;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.produkt button:hover {
+  background-color: #005f77;
+}
+
+
+#cart-list {
+  list-style: none;
+  padding: 0;
+}
+
+#cart-list li {
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border-left: 4px solid #007799;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#cart-list li button {
+  background-color: #cc0000;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#cart-list li button:hover {
+  background-color: #990000;
+}
+
+#total {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+
+footer {
+  background-color: #004d66;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
 }
