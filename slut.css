@@ -89,3 +89,21 @@ footer {
     color: white;
     text-align: center;
 }
+
+.slideshow-container {
+  width: 100%;
+  max-width: 1000px;
+  height: 400px;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
