@@ -1,39 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Lisslö Förening</title>
-  <link rel="stylesheet" href="slut.css">
-
+  <link rel="stylesheet" href="slut.css" />
 </head>
 <body>
   <header>
-    <h1>Välkomen till Lisslö förening!</h1>
+    <h1>Välkommen till Lisslö förening!</h1>
     <nav>
       <ul>
-        <li> <a href="#hem"></a>Hem</li>
-        <li> <a href="slut.html"></a>Lisslö</li>
-        <li> <a href="butik.html"></a>Butik</li>
-        <li> <a href="#kontakt"></a>Kontakt</li>
+        <li><a href="#hem">Hem</a></li>
+        <li><a href="slut.html">Lisslö</a></li>
+        <li><a href="butik.html">Butik</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
       </ul>
     </nav>
   </header>
+
+ 
+  <section id="bildspel">
+    <div class="slideshow-container">
+      <img class="slide" src="Skärmbild 2025-05-01 161241.png" alt="Bild 1" />
+      <img class="slide" src="bild2.jpg" alt="Bild 2" />
+      <img class="slide" src="bild3.jpg" alt="Bild 3" />
+    </div>
+  </section>
+
   
   <section id="hem">
     <h2>Hem</h2>
-    <p>Hejsan idojd</p>
-
+    <p>Välkommen till vår förening! Här hittar du information om aktiviteter, evenemang och vår gemenskap.</p>
   </section>
 
+ 
   <section id="kontakt">
+<p>Här hittar du oss:</p>
+<div style="width: 100%; height: 300px; margin-bottom: 20px;">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8186.421057934558!2d18.6962479!3d59.7678321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465ef07b108e0a71%3A0x8535103095d48b94!2sLissl%C3%B6%2C%20Norrt%C3%A4lje!5e0!3m2!1ssv!2sse!4v1716039569334!5m2!1ssv!2sse" 
+    width="100%" 
+    height="100%" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+</div>
+
     <h2>Kontakt</h2>
+    <p>Fyll i formuläret nedan för att kontakta oss:</p>
     <form>
       <label for="namn">Namn:</label>
-      <input type="text" id="namn" name="namn" required>
+      <input type="text" id="namn" name="namn" required />
 
       <label for="email">E-post:</label>
-      <input type="email" id="email" name="email" required>
+      <input type="email" id="email" name="email" required />
 
       <label for="meddelande">Meddelande:</label>
       <textarea id="meddelande" name="meddelande" required></textarea>
@@ -42,9 +66,9 @@
     </form>
   </section>
 
-
   <footer>
-    <p>Lisslö</p>
+    <p>&copy; 2025 Lisslö Förening</p>
   </footer>
+<script src="slut.js"></script>
 </body>
 </html>
