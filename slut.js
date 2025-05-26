@@ -1,4 +1,3 @@
-
 let slideIndex = 0;
 const slides = document.querySelectorAll(".slide");
 
@@ -58,4 +57,14 @@ function clearCart() {
   cart = [];
   saveCart();
   updateCart();
+}
+
+function sendOrder() {
+  if (cart.length === 0) {
+    alert("Din varukorg är tom!");
+    return;
+  }
+  let orderText = cart.map(item => `${item.name} - ${item.price} kr`).join('%0D%0A');
+  orderText += `%0D%0A${totalElement.textContent}`;
+  window.location.href = `mailto:lukas.bruce@skola.taby.se?subject=Beställning från Lisslö Butik&body=${orderText}`;
 }
